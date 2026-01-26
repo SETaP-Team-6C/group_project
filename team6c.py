@@ -1,5 +1,4 @@
 import turtle as t
-#should make headband trapizium i think it would look better
 
 # bg colour
 BG_COLOUR = "WHITE"
@@ -16,7 +15,7 @@ t.speed(0)
 
 def head():
     t.penup()
-    t.goto(500,150)
+    t.goto(500,100)
     t.pendown()
     t.circle(220)
     
@@ -129,35 +128,52 @@ def chief_hat():
     t.circle(90)
     t.end_fill()
 
-    # hat base
-    t.penup()
-    t.goto(300,550)
-    t.pendown()
-    t.pencolor("BLACK")
+    #polygon hat
+    bottom_left = (325,450)
+    top_left = (375,550)
+    bottom_right = (675,450)
+    top_right = (625,550)
+    corners = [bottom_left,top_left,top_right,bottom_right,bottom_left]
+        
     t.fillcolor("BLACK")
+    t.pencolor("BLACK")
     t.begin_fill()
-    for i in range(2):
-        t.forward(400)
-        t.right(90)
-        t.forward(100)
-        t.right(90)
+    
+    for i in corners:
+        t.goto(i)
+    t.end_fill()
+    
+    #polygon hat inner
+    bottom_left = (350,475)
+    top_left = (400,575)
+    bottom_right = (650,475)
+    top_right = (600,575)
+    corners = [bottom_left,top_left,top_right,bottom_right,bottom_left]
+        
+    t.fillcolor("WHITE")
+    t.pencolor("WHITE")
+    t.begin_fill()
+    t.penup()
+    t.goto(bottom_left)
+    t.pendown()
+    
+    for i in corners:
+        t.goto(i)
     t.end_fill()
     
 
-    #hat base inner
-    t.penup()
-    t.goto(325,535)
-    t.pendown()
-    t.fillcolor("WHITE")
-    t.begin_fill()
-    for i in range(2):
-        t.forward(350)
-        t.right(90)
-        t.forward(75)
-        t.right(90)
-    t.end_fill()
-
 chief_hat()
 
+#spatula but im thinking circle for hand and then bigger rectangle for handle and so on
+def spatula():
+    t.penup()
+    t.pencolor("BLACK")
+    t.goto(750,100)
+
+
+    t.pendown()
+
+    t.circle(50)
+spatula()
 t.done()
 
