@@ -9,6 +9,7 @@ Mohammed Alobaid - up2299899
 
 
 this is what it looks like currently pls update if u make changes (make headband a trapizium and spatula or anything really)
-<img width="1009" height="882" alt="image" src="https://github.com/user-attachments/assets/8b6d5372-59bc-4924-80d4-03d34e0ad298" />
+<img width="809" height="735" alt="image" src="https://github.com/user-attachments/assets/4d148d46-f8fb-4ba9-8066-d4c69f4b043c" />
+
 
 
