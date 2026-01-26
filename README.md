@@ -8,6 +8,6 @@ Shijit Gurung - up2213822
 Mohammed Alobaid - up2299899
 
 
-this is what it looks like currently pls update if u make changes
+this is what it looks like currently pls update if u make changes (make headband a trapizium and spatula or anything really)
 <img width="781" height="779" alt="image" src="https://github.com/user-attachments/assets/be771f23-352c-40f2-8d92-1c20699fc359" />
 
