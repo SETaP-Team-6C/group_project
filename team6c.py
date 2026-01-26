@@ -15,9 +15,34 @@ t.speed(0)
 
 def head():
     t.penup()
-    t.goto(500,100)
+    t.goto(500,150)
     t.pendown()
-    t.circle(200)
+    t.circle(220)
+    
+    # smile
+    t.penup()
+    t.goto(450,220)
+    t.pendown()
+    #orientation of the arrow u cant see it at full speed lower for demonostration
+    t.setheading(270)
+    t.circle(50,180)
+    t.setheading(0)
+
+
+    #left eye
+    t.penup()
+    t.goto(400,400)
+    t.pendown()
+    t.circle(15)
+
+    #right eye
+    t.penup()
+    t.goto(600,400)
+    t.pendown()
+    t.circle(15)
+
+    #nose
+
 
 head()
 
