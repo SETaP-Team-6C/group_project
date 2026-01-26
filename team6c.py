@@ -80,6 +80,7 @@ def chief_hat():
     t.pendown()
 
     #middle circle
+    t.pensize(5)
     t.fillcolor("BLACK")
     t.begin_fill()
     t.circle(100)
@@ -105,6 +106,7 @@ def chief_hat():
 
     # middle circle inner
     t.goto(500,500)
+    t.pensize(1)
     t.pendown()
     t.pencolor("WHITE")
     t.fillcolor("WHITE")
