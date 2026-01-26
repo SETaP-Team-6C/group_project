@@ -1,7 +1,6 @@
 import turtle as t
 
 # bg colour
-BG_COLOUR = "WHITE"
 t.bgcolor("WHITE")
 
 
@@ -34,6 +33,7 @@ def head():
     t.goto(400,400)
     t.pendown()
     t.circle(15)
+
     #left eye inner
     t.penup()
     t.goto(405,405)
@@ -48,6 +48,7 @@ def head():
     t.goto(600,400)
     t.pendown()
     t.circle(15)
+
     #right eye inner
     t.penup()
     t.goto(605,405)
