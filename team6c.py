@@ -1,4 +1,5 @@
 import turtle as t
+#should make headband trapizium i think it would look better
 
 # bg colour
 BG_COLOUR = "WHITE"
@@ -34,21 +35,46 @@ def head():
     t.goto(400,400)
     t.pendown()
     t.circle(15)
+    #left eye inner
+    t.penup()
+    t.goto(405,405)
+    t.pendown()
+    t.fillcolor("BLACK")
+    t.begin_fill()
+    t.circle(5)
+    t.end_fill()
 
     #right eye
     t.penup()
     t.goto(600,400)
     t.pendown()
     t.circle(15)
+    #right eye inner
+    t.penup()
+    t.goto(605,405)
+    t.pendown()
+    t.begin_fill()
+    t.circle(5)
+    t.end_fill()
+    
 
-    #nose
+    #nose idk why it works
+    t.penup()
+    t.goto(500,275)
+    t.pendown()
+    tilt = 90
+    for i in range(0,60,10):
+        t.forward(20)
+        t.setheading(tilt+i)
+    t.setheading(0)
+        
 
 
 head()
 
 
 def chief_hat():
-    # middle
+    # goto middle
     t.penup()
     t.goto(500,500)
     t.pendown()
@@ -77,6 +103,7 @@ def chief_hat():
     t.end_fill()
     t.penup()
 
+    # middle circle inner
     t.goto(500,500)
     t.pendown()
     t.pencolor("WHITE")
@@ -86,7 +113,7 @@ def chief_hat():
     t.end_fill()
     
 
-    #left circle
+    #left circle inner
     t.penup()
     t.backward(150)
     t.pendown()
@@ -94,7 +121,7 @@ def chief_hat():
     t.circle(90)
     t.end_fill()
 
-    #right circle
+    #right circle inner
     t.penup()
     t.forward(300)
     t.pendown()
@@ -102,7 +129,7 @@ def chief_hat():
     t.circle(90)
     t.end_fill()
 
-    #base
+    # hat base
     t.penup()
     t.goto(300,550)
     t.pendown()
@@ -117,6 +144,7 @@ def chief_hat():
     t.end_fill()
     
 
+    #hat base inner
     t.penup()
     t.goto(325,535)
     t.pendown()
