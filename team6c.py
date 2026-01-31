@@ -1,4 +1,5 @@
 import turtle as t
+import math
 
 # bg colour
 t.bgcolor("WHITE")
@@ -11,6 +12,8 @@ screen.setworldcoordinates(0,0,1000,1000)
 
 #speed cus im not waiting
 t.speed(0)
+#thicker lines
+t.pensize(10)
 
 def head():
     t.penup()
@@ -168,15 +171,42 @@ def chief_hat():
 chief_hat()
 
 #spatula but im thinking circle for hand and then bigger rectangle for handle and so on
-def spatula():
+def handle():
+    t.fillcolor("BLACK")
+    corners = [(700,150),(650,50),(700,30),(750,130)]
+    t.penup()
+    t.goto(700,150)
+    t.pendown()
+    t.begin_fill()
+    for i in corners:
+        t.goto(i)
+    t.end_fill()
+
+def shaft():
+    t.pensize()
+    corners = [(850,430),(720,130),(740,130),(870,410),(850,430)]
+    t.penup()
+    t.goto(850,430)
+    t.pendown()
+    for corner in corners:
+        t.goto(corner)
+
+def head():
+    pass
+
+
+def spoon_whole():
+    handle()
+    t.pensize(10)
     t.penup()
     t.pencolor("BLACK")
-    t.goto(750,100)
+    t.goto(700,20)
 
 
     t.pendown()
 
     t.circle(50)
-spatula()
+    shaft()
+spoon_whole()
 t.done()
 
