@@ -1,5 +1,4 @@
 import turtle as t
-import math
 
 # bg colour
 t.bgcolor("WHITE")
@@ -183,16 +182,41 @@ def handle():
     t.end_fill()
 
 def shaft():
-    t.pensize()
-    corners = [(850,430),(720,130),(740,130),(870,410),(850,430)]
+    corners = [
+        (820,420),
+        (690,120),
+        (710,120),
+        (840,400),
+        (820,420)
+    ]
     t.penup()
-    t.goto(850,430)
+    t.goto(corners[0])
     t.pendown()
     for corner in corners:
         t.goto(corner)
 
-def head():
-    pass
+
+def spatula_head():
+    corners = [
+    (820,400),   
+    (840,400),   
+    (900,470),   
+    (760,470),   
+
+    (760,570),   
+    (900,570),   
+    (900,470),   
+    (760,470),   
+
+    (820, 400)
+    ]
+    t.penup()
+    t.goto(corners[0])
+    t.pendown()
+    t.begin_fill()
+    for corner in corners:
+        t.goto(corner)
+    t.end_fill()
 
 
 def spoon_whole():
@@ -207,6 +231,7 @@ def spoon_whole():
 
     t.circle(50)
     shaft()
+    spatula_head()
 spoon_whole()
 t.done()
 
